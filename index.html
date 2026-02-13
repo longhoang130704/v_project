@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Câu chuyện của chúng ta</title>
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;500&family=Dancing+Script&display=swap"
+		rel="stylesheet">
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Music Control -->
+	<button class="music-btn" onclick="toggleMusic()">🔊</button>
+	<audio id="bg-music" loop>
+		<source src="assets/music.webm" type="audio/webm">
+	</audio>
+
+	<!-- HERO -->
+	<section class="hero">
+		<h1 data-aos="fade-up">Câu chuyện của chúng ta</h1>
+		<p data-aos="fade-up" data-aos-delay="300">
+			<ul>
+				Từ khoảnh khắc đầu tiên, mọi thứ đã thay đổi.
+			</ul>
+			<!-- <ul>
+				Click vào màn hình để bật nhạc sau 5s nhé.
+			</ul> -->
+		</p>
+		<span class="scroll-down">↓</span>
+	</section>
+
+	<!-- FIRST MET -->
+	<section class="section" data-aos="fade-right">
+		<h2>📅 Valetine chúng ta có nhau</h2>
+		<p class="date">14 / 02 / 2026</p>
+		<p>
+			Anh vẫn nhớ rất rõ ngày hôm đó.
+			Anh không biết rằng, chỉ một nụ cười của em
+			lại có thể ở lại trong tim anh lâu đến vậy.
+		</p>
+	</section>
+
+	<!-- MEMORY -->
+	<section class="section highlight" data-aos="fade-up">
+		<h2>💬 Kỷ niệm đầu tiên</h2>
+		<blockquote>
+			“Từ hôm đó, anh bắt đầu mong chờ
+			từng tin nhắn nhỏ từ em.”
+		</blockquote>
+	</section>
+
+	<!-- PHOTO TIMELINE -->
+	<section class="section" data-aos="fade-left">
+		<h2>📸 Những khoảnh khắc</h2>
+
+		<div class="timeline">
+			<div class="item">
+				<img src="assets/images/img1.jpg" alt="">
+				<!-- <p>Lần hẹn hò đầu tiê</p> -->
+			</div>
+			<div class="item">
+				<p>Một ngày rất bình thường, nhưng có em</p>
+				<img src="assets/images/img2.jpg" alt="">
+			</div>
+			<div class="item">
+				<p>Khi chúng ta cười cùng nhau</p>
+				<img src="assets/images/img3.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- NOW -->
+	<section class="section highlight" data-aos="fade-up">
+		<h2>❤️ Hiện tại</h2>
+		<p>Chúng ta đã bên nhau được hơn 1 tháng</p>
+		<!-- <div id="counter"></div> -->
+	</section>
+
+	<!-- FUTURE -->
+	<section class="section future" data-aos="fade-up">
+		<h2>💍 Tương lai</h2>
+		<p>
+			Anh không hứa những điều quá lớn lao.
+			Anh chỉ hứa, mỗi ngày đều chọn em.
+			Dù là hôm nay, hay rất nhiều ngày về sau.
+		</p>
+	</section>
+
+	<!-- FUTURE -->
+	<!-- <section class="section future" data-aos="fade-up">
+		<h2>💍 Tương lai</h2>
+		<p>
+			Anh không hứa những điều quá lớn lao.
+			Anh chỉ hứa, mỗi ngày đều chọn em.
+			Dù là hôm nay, hay rất nhiều ngày về sau.
+		</p>
+	</section> -->
+
+	<!-- GIFT SECTION -->
+	<section class="section gift-section" data-aos="fade-up">
+	<h2>🎁 Món quà dành cho em</h2>
+	<p class="gift-hint">Chạm để mở món quà cuối cùng</p>
+
+	<div class="gift-wrapper" onclick="openGift()">
+		<img
+		id="giftImage"
+		src="assets/images/gift-closed.jpg"
+		alt="Gift"
+		class="gift-image"
+		/>
+	</div>
+
+	<div class="gift-content" id="giftContent">
+		<h3>💖 Valentine này...</h3>
+		<p>
+		Anh không hứa những điều hoàn hảo.  
+		Anh chỉ hứa, mỗi ngày đều chọn em  
+		và ở lại, dù là lúc vui hay buồn.
+		</p>
+	</div>
+
+	<!-- flying elements -->
+	<div id="flyingContainer"></div>
+	</section>
+
+
+	<footer>
+		<p>Valentine ♥</p>
+	</footer>
+
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
